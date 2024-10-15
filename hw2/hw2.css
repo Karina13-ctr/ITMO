@@ -1,0 +1,34 @@
+
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: brown;
+}
+
+.age {
+    background-color: bisque;
+}
+
+.eyes {
+    background-color: lightblue;
+}
+
+.weight {
+    background-color: pink;
+}
+
+
+#name {
+    letter-spacing: 3px;
+  }
+
+
+blockquote[cite] {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+
+* {
+   border-radius: 10%;
+  }
