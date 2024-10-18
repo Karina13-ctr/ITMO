@@ -1,0 +1,83 @@
+:root {
+    --color-dark: #0f172a;
+    --color-light: #fff;
+    --font-family-base: 'Rubik', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: var(--color-dark);
+
+}
+
+.events-title {
+    margin-bottom: -20px;
+}
+
+
+.texting {
+    align-items: center;
+}
+
+
+.headd {
+    font-size: 18px;
+}
+
+.bottomBlockFlex {
+    display: flex;
+    gap: 50px;
+    align-items:normal;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+/*Content 8 Events*/
+.events-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 200px 30px;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.firstBox, .secondBox, .thirdBox{
+    width: 300px;
+    height: 100%;
+}
+
+
+
+.events-title {
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.headd {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: gray;
+}
+
+
+.DesignTXT {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.wildTXT {
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+}
