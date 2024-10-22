@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px; 
+        }
+        .color-box {
+            width: 100px; 
+            height: 100px; 
+            margin: 10px; 
+        }
+        .red {
+            background-color: red;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .green {
+            background-color: green;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+        .color-container {
+            display: flex; 
+            justify-content: center;
+        }
+        .gray-container {
+            display: flex; 
+            justify-content: center;
+            flex-wrap: wrap; 
+            width: 480px; 
+            margin-top: 20px; 
+        }
+        .gray-box {
+            width: 110px; 
+            height: 110px; 
+            background-color: gray; 
+            margin: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Picker</h1>
+    <div class="color-container">
+        <div class="color-box red"></div>
+        <div class="color-box blue"></div>
+        <div class="color-box green"></div>
+        <div class="color-box yellow"></div>
+    </div>
+    <div class="gray-container">
+        <div class="gray-box"></div>
+        <div class="gray-box"></div>
+        <div class="gray-box"></div>
+        <div class="gray-box"></div>
+        <div class="gray-box"></div>
+        <div class="gray-box"></div>
+        <div class="gray-box"></div>
+        <div class="gray-box"></div>
+    </div>
+
+    <script>
+        let selectedColor = '';
+        const colorBoxes = document.querySelectorAll('.color-box');
+        colorBoxes.forEach(colorBox => {
+            colorBox.addEventListener('click', function() {
+                selectedColor = getComputedStyle(this).backgroundColor;
+            });
+        });
+        const grayBoxes = document.querySelectorAll('.gray-box');
+        grayBoxes.forEach(grayBox => {
+            grayBox.addEventListener('click', function() {
+                if (selectedColor) {
+                    this.style.backgroundColor = selectedColor;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
